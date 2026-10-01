@@ -3,9 +3,13 @@ import Image from 'next/image'
 
 export const Logo = () => {
   return (
-    <Link href="/" title="Visit About page">
+    <Link
+      href="/"
+      title="Visit About page"
+    >
       <Image
-        src="/nazuna.png"
+        className="rounded-full"
+        src="/logo.jpg"
         alt="Logo"
         width={64}
         height={64}

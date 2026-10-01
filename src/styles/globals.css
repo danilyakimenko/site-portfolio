@@ -33,3 +33,12 @@ svg * {
   margin-inline: auto;
   padding-inline: var(--container-padding-x);
 }
+
+@layer components {
+  .nav-link {
+    @apply px-5 py-2.5 rounded-full text-white/70 font-semibold hover:bg-white/10 hover:text-white transition duration-200;
+  }
+  .nav-link.is-active {
+    @apply bg-white text-gray-900 pointer-events-none;
+  }
+}
