@@ -1,3 +1,5 @@
+import { Skills } from '@/sections/Skills'
+
 export default function SkillsPage() {
-  return <div>SkillsPage</div>
+  return <Skills />
 }
