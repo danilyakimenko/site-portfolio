@@ -1,3 +1,5 @@
+import { Portfolio } from '@/sections/Portfolio'
+
 export default function PortfolioPage() {
-  return <div>PortfolioPage</div>
+  return <Portfolio />
 }
