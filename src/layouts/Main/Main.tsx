@@ -1,7 +1,3 @@
-export const Main = ({ children }: { children: React.ReactNode}) => {
-  return (
-    <main className="container">
-      {children}
-    </main>
-  )
+export const Main = ({ children }: { children: React.ReactNode }) => {
+  return <main className="container">{children}</main>
 }

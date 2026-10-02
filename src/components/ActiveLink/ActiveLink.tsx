@@ -10,14 +10,14 @@ type ActiveLinkProps = {
   children: React.ReactNode
 }
 
-export const ActiveLink = ({ href, title, children}: ActiveLinkProps) => {
+export const ActiveLink = ({ href, title, children }: ActiveLinkProps) => {
   const pathname = usePathname()
   const isActive = pathname === href
-  
+
   return (
     <Link
-      className={clsx("nav-link", {
-        "is-active": isActive
+      className={clsx('nav-link', {
+        'is-active': isActive,
       })}
       href={href}
       title={title}

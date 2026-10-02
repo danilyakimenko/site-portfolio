@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import './variables.css';
+@import "./variables.css";
 
 html {
   height: 100%;

@@ -1,7 +1,3 @@
 export default function PortfolioPage() {
-  return (
-    <div>
-      PortfolioPage
-    </div>
-  )
+  return <div>PortfolioPage</div>
 }

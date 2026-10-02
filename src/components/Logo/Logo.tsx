@@ -3,10 +3,7 @@ import Image from 'next/image'
 
 export const Logo = () => {
   return (
-    <Link
-      href="/"
-      title="Visit About page"
-    >
+    <Link href="/" title="Visit About page">
       <Image
         className="rounded-full"
         src="/logo.jpg"

@@ -1,7 +1,3 @@
 export default function SkillsPage() {
-  return (
-    <div>
-      SkillsPage
-    </div>
-  )
+  return <div>SkillsPage</div>
 }
