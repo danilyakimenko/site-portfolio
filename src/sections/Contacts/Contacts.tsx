@@ -4,7 +4,7 @@ export const Contacts = () => {
   return (
     <section className="flex flex-col  flex-1 gap-y-20 py-20">
       <h1 className="text-5xl text-center">Contact <span className="text-emerald-500">me</span></h1>
-      <form className="grid grid-cols-2 gap-10">
+      <form className="grid md:grid-cols-2 gap-10">
         <Field
           title="First Name"
           placeholder="Ivan"
