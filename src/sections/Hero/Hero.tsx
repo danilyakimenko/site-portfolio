@@ -13,8 +13,12 @@ export const Hero = () => {
           I can do some great things for you.
         </p>
         <Link
-          className="text-lg w-40 px-5 py-3 rounded-2xl text-white/70 font-semibold border border-white/15 bg-white/10  hover:text-white hover:border-emerald-600 transition text-center"
+          className="text-lg w-40 px-5 py-3 rounded-2xl dark:text-white/70 font-semibold
+           border dark:border-white/15 dark:bg-white/10  dark:hover:text-white dark:hover:border-emerald-600 transition text-center
+           border-none bg-emerald-500 text-white hover:bg-emerald-600
+           "
           href="/portfolio"
+          title="Visit Portfolio page"
         >
           Let's check!
         </Link>
