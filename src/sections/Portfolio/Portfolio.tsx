@@ -26,7 +26,7 @@ export const Portfolio = () => {
                 {date}
               </time>
               <a
-                className="text-3xl relative hover:text-emerald-500 after:absolute after:content-[''] after:bottom-5 after:-right-[25px] after:bg-[url('/link.svg')] after:bg-contain after:bg-no-repeat after:w-4 after:h-4"
+                // className="text-3xl relative hover:text-emerald-500 after:absolute after:content-[''] after:bottom-5 after:-right-[25px] after:bg-[url('/link.svg')] after:bg-contain after:bg-no-repeat after:w-4 after:h-4"
                 href={href}
               >
                 <h2 >{title}</h2>
