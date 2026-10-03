@@ -4,10 +4,6 @@ export const linkItems = [
     href: '/',
   },
   {
-    label: 'Skills',
-    href: '/skills',
-  },
-  {
     label: 'Portfolio',
     href: '/portfolio',
   },

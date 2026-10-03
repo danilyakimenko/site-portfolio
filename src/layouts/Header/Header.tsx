@@ -5,34 +5,46 @@ import { ActiveLink } from '@/components/ActiveLink'
 
 export const Header = () => {
   return (
-    <header className="wrapper flex justify-between items-center py-4">
-      <Logo />
-      <dialog className="flex absolute w-full h-full inset-0 bg-gray-900 lg:hidden" open>
-        <nav className="h-full">
-          <ul className="inline-flex items-center gap-4 p-5 border border-white/15 rounded-full bg-white/10">
-            {linkItems.map(({ label, href }) => (
-              <li key={label}>
-                <ActiveLink
-                  href={href}
-                  title={`Visit ${label} page`}
-                >
-                  {label}
-                </ActiveLink>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div className="flex items-center gap-3 text-white">
-          <div>Темы</div>
-          <div>Язык</div>
+    <header className="wrapper flex flex-col py-4 gap-6 sm:flex-row sm:justify-between sm:items-center">
+      <div className="flex justify-between items-center sm:contents">
+        <Logo />
+        <div className="sm:order-3">
+          <div className="flex items-center gap-3">
+            <button>
+              <img
+                className=""
+                src="/sun.svg"
+                width={44}
+                height={44}
+                alt="Switch to a light theme"
+              />
+            </button>
+            <button>
+              <img
+                className=""
+                src="/language.svg"
+                width={44}
+                height={44}
+                alt="Switch language"
+              />
+            </button>
+          </div>
         </div>
-      </dialog>
-      <button
-        className="lg:hidden"
-        type="button"
-      >
-        Burger button
-      </button>
+      </div>
+      <nav className="sm:order-2">
+        <ul className="flex justify-center gap-2">
+          {linkItems.map(({ label, href }) => (
+            <li key={label}>
+              <ActiveLink
+                href={href}
+                title={`Visit ${label} page`}
+              >
+                {label}
+              </ActiveLink>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </header>
   )
 }
