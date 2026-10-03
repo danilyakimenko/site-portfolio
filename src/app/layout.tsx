@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
-import localFont from 'next/font/local'
+// import localFont from 'next/font/local'
 import '../styles/globals.css'
 import { Header } from '@/layouts/Header'
 import { Main } from '@/layouts/Main'
 import { Footer } from '@/layouts/Footer'
 
-const rubik = localFont({
+/*const rubik = localFont({
   src: [
     {
       path: './fonts/Rubik-Regular.woff2',
@@ -28,7 +28,7 @@ const rubik = localFont({
       style: 'normal',
     },
   ],
-})
+})*/
 
 export const metadata: Metadata = {
   title: 'Danil Yakimenko. Frontend Developer',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
-    <html lang="en" className={`${rubik.className}`}>
+    <html lang="en">
       <body className="antialiased">
         <Header />
         <Main>{children}</Main>
