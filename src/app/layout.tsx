@@ -6,6 +6,10 @@ import { Main } from '@/layouts/Main'
 import { Footer } from '@/layouts/Footer'
 
 const rubik = localFont({
+  src: './fonts/Rubik-Variable.woff2',
+})
+
+/*const rubik = localFont({
   src: [
     {
       path: './fonts/Rubik-Regular.woff2',
@@ -28,7 +32,7 @@ const rubik = localFont({
       style: 'normal',
     },
   ],
-})
+})*/
 
 export const metadata: Metadata = {
   title: 'Danil Yakimenko. Frontend Developer',
