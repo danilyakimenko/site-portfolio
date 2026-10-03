@@ -12,7 +12,7 @@ export const Header = () => {
           <div className="flex items-center gap-3">
             <button>
               <img
-                className=""
+                className="p-1 bg-emerald-500 rounded-full dark:bg-transparent hover:bg-emerald-600 dark:hover:bg-gray-800"
                 src="/sun.svg"
                 width={44}
                 height={44}
@@ -21,7 +21,7 @@ export const Header = () => {
             </button>
             <button>
               <img
-                className=""
+                className="p-1 bg-emerald-500 rounded-full dark:bg-transparent hover:bg-emerald-600 dark:hover:bg-gray-800"
                 src="/language.svg"
                 width={44}
                 height={44}
@@ -31,7 +31,7 @@ export const Header = () => {
           </div>
         </div>
       </div>
-      <nav className="sm:order-2">
+      <nav className="sm:order-2 bg-emerald-500 dark:bg-white/10 p-4 rounded-full">
         <ul className="flex justify-center gap-2">
           {linkItems.map(({ label, href }) => (
             <li key={label}>

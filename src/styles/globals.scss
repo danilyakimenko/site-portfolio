@@ -1,21 +1,7 @@
 @import "tailwindcss";
 @import "variables";
 
-html {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--color-gray-900);
-  min-height: 100%;
-  color: var(--color-white);
-}
-
-main {
-  flex-grow: 1;
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
 a,
 button,
@@ -46,9 +32,7 @@ svg * {
     animation-range: 0 100px;
 
     @mixin scrolling-header-styles {
-      background-color: var(--color-gray-800);
-      border-bottom-left-radius: var(--radius-2xl);
-      border-bottom-right-radius: var(--radius-2xl);
+      backdrop-filter: blur(10px);
     }
 
     @keyframes scrolling-header {
@@ -65,10 +49,10 @@ svg * {
   }
 
   .nav-link {
-    @apply px-4 py-2.5 rounded-full text-white/70 font-semibold hover:bg-emerald-700 hover:text-white transition duration-200;
+    @apply px-4 py-2.5 rounded-full text-white font-semibold hover:bg-emerald-600 hover:text-white transition duration-200;
   }
 
   .nav-link.is-active {
-    @apply bg-emerald-600 text-white pointer-events-none;
+    @apply bg-emerald-700 text-white pointer-events-none;
   }
 }
