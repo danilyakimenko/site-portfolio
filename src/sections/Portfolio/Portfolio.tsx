@@ -4,18 +4,18 @@ import { portfolioItems } from '@/sections/Portfolio/items/portfolioItems'
 export const Portfolio = () => {
   return (
     <section
-      className="flex-1 flex flex-col items-center gap-2 py-20"
+      className="flex flex-col items-center gap-6 py-20"
     >
       <h1 className="text-5xl text-center">My <span className="text-emerald-500">Portfolio</span>
       </h1>
       <ul className="grid gap-y-20">
         {portfolioItems.map(({ title, href, description, date, imageSrc, tools }) => (
           <li
-            className="flex justify-between gap-10 shadow-lg shadow-emerald-500/30 p-8 rounded-2xl hover:shadow-emerald-500/80 transition duration-200"
+            className="flex flex-col md:flex-row justify-between gap-10 shadow-lg shadow-emerald-500/30 p-8 rounded-2xl hover:shadow-emerald-500/80 transition duration-200"
             key={title}
           >
             <Image
-              className="w-120 h-80 object-cover object-top rounded-4xl shrink-0"
+              className="w-100 h-80 object-cover object-top rounded-4xl shrink-0"
               src={imageSrc}
               width={400}
               height={320}
@@ -26,13 +26,13 @@ export const Portfolio = () => {
                 {date}
               </time>
               <a
-                // className="text-3xl relative hover:text-emerald-500 after:absolute after:content-[''] after:bottom-5 after:-right-[25px] after:bg-[url('/link.svg')] after:bg-contain after:bg-no-repeat after:w-4 after:h-4"
+                className="text-3xl relative hover:text-emerald-500 after:absolute after:content-[''] after:bottom-5 after:-right-[25px] after:bg-[url('/link.svg')] after:bg-contain after:bg-no-repeat after:w-4 after:h-4"
                 href={href}
               >
                 <h2 >{title}</h2>
               </a>
               <p>{description}</p>
-              <ul className="flex gap-5">
+              <ul className="flex flex-wrap gap-5">
                 {tools.map(({ title, toolIcon }) => (
                   <li
                     className="flex justify-center items-center p-3 shadow-md shadow-emerald-500/50 rounded-full"
@@ -41,8 +41,8 @@ export const Portfolio = () => {
                   >
                     <img
                       src={toolIcon}
-                      width={32}
-                      height={32}
+                      width={24}
+                      height={24}
                       alt={title}
                     />
                   </li>
