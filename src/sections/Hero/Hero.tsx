@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const Hero = () => {
   return (
     <section className="wrapper flex flex-col justify-center items-center gap-4 py-20 sm:flex-row">
-      <div className="grid gap-y-6 flex-1 text-4xl shrink-0">
+      <div className="grid gap-y-6 flex-1 text-4xl sm:text-5xl shrink-0">
         <h1 className="tracking-[4px]">
           <span className="text-emerald-500">Hello!</span>&nbsp; My name is{' '}
           <br /> Danil Yakimenko.
