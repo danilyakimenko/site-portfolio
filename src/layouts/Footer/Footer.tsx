@@ -3,12 +3,11 @@ import Link from 'next/link'
 
 export const Footer = () => {
   return (
-    <footer className="container mb-12">
-      <div className="flex justify-between gap-7 p-10 bg-gray-800 rounded-2xl">
+    <footer className="wrapper mb-12">
+      <div className="flex flex-col justify-between gap-7 p-10 bg-gray-800 rounded-2xl md:flex-row">
         <div className="flex flex-col justify-between gap-y-6">
-          <div className="text-5xl">
+          <div className="grid text-3xl sm:text-4xl">
             <span>Do you want to ask</span>
-            <br />
             <span className="text-emerald-500">something interesting?</span>
           </div>
           <p>
@@ -22,7 +21,7 @@ export const Footer = () => {
             &nbsp; I am in touch mon-fri from 8 am to 8 pm (GMT +7).
           </p>
         </div>
-        <div className="flex flex-col justify-between">
+        <div className="flex flex-col justify-between items-center gap-6">
           <ul className="flex gap-3">
             {linkItems.map(({ title, href, imgSrc }) => (
               <li key={title}>
@@ -42,7 +41,7 @@ export const Footer = () => {
               </li>
             ))}
           </ul>
-          <p className="self-end">© Danil Yakimenko, 2026</p>
+          <p className="md:self-end">© Danil Yakimenko, 2026</p>
         </div>
       </div>
     </footer>

@@ -42,7 +42,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
       <body className="antialiased">
         <Header />
         <Main>{children}</Main>
-        {/*<Footer />*/}
+        <Footer />
       </body>
     </html>
   )
