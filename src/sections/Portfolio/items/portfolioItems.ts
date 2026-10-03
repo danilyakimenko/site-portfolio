@@ -3,6 +3,7 @@
 export const portfolioItems = [
   {
     title: 'AnimeVibe',
+    href: 'https://danilyakimenko.github.io/anime-vibe/',
     description: 'AnimeVibe is a responsive multi-page anime streaming platform built with Minista, JavaScript, JSX and SCSS.',
     date: 'September 2026',
     imageSrc: '/animevibe.png',
@@ -40,6 +41,7 @@ export const portfolioItems = [
   },
   {
     title: 'Future Tech',
+    href: 'https://danilyakimenko.github.io/future-tech/',
     description: 'AnimeVibe is a responsive multi-page anime streaming platform built with Minista, JavaScript, JSX and SCSS.',
     date: 'August 2026',
     imageSrc: '/futuretech.png',
@@ -72,6 +74,7 @@ export const portfolioItems = [
   },
   {
     title: 'YouTube Clone',
+    href: 'https://github.com/danilyakimenko/youtube-clone',
     description: 'AnimeVibe is a responsive multi-page anime streaming platform built with Minista, JavaScript, JSX and SCSS.',
     date: 'October 2026',
     imageSrc: '/youtubeclone.png',

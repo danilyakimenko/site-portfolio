@@ -9,7 +9,7 @@ export const Portfolio = () => {
       <h1 className="text-5xl text-center">My <span className="text-emerald-500">Portfolio</span>
       </h1>
       <ul className="grid gap-y-20">
-        {portfolioItems.map(({ title, description, date, imageSrc, tools }) => (
+        {portfolioItems.map(({ title, href, description, date, imageSrc, tools }) => (
           <li
             className="flex justify-between gap-10 shadow-lg shadow-emerald-500/30 p-8 rounded-2xl hover:shadow-emerald-500/80 transition duration-200"
             key={title}
@@ -27,7 +27,7 @@ export const Portfolio = () => {
               </time>
               <a
                 className="text-3xl relative hover:text-emerald-500 after:absolute after:content-[''] after:bottom-5 after:-right-[25px] after:bg-[url('/link.svg')] after:bg-contain after:bg-no-repeat after:w-4 after:h-4"
-                href="#"
+                href={href}
               >
                 <h2 >{title}</h2>
               </a>

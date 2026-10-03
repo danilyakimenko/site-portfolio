@@ -41,8 +41,8 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
     <html lang="en" className={`${rubik.className}`}>
       <body className="antialiased">
         <Header />
-        <Main>{children}</Main>
-        <Footer />
+        {/*<Main>{children}</Main>*/}
+        {/*<Footer />*/}
       </body>
     </html>
   )

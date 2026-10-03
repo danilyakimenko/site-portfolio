@@ -27,7 +27,7 @@ svg * {
   transition-duration: var(--transition-duration);
 }
 
-.container {
+.wrapper {
   width: 100%;
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: auto;
