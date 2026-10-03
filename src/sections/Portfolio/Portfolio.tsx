@@ -11,7 +11,7 @@ export const Portfolio = () => {
       <ul className="grid gap-y-20">
         {portfolioItems.map(({ title, description, date, imageSrc, tools }) => (
           <li
-            className="flex justify-between gap-10 shadow-lg shadow-emerald-500/30 p-8 rounded-2xl"
+            className="flex justify-between gap-10 shadow-lg shadow-emerald-500/30 p-8 rounded-2xl hover:shadow-emerald-500/80 transition duration-200"
             key={title}
           >
             <Image
