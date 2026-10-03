@@ -9,31 +9,6 @@ const rubik = localFont({
   src: './fonts/Rubik-Variable.woff2',
 })
 
-/*const rubik = localFont({
-  src: [
-    {
-      path: './fonts/Rubik-Regular.woff2',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: './fonts/Rubik-Medium.woff2',
-      weight: '500',
-      style: 'normal',
-    },
-    {
-      path: './fonts/Rubik-Semibold.woff2',
-      weight: '600',
-      style: 'normal',
-    },
-    {
-      path: './fonts/Rubik-Bold.woff2',
-      weight: '700',
-      style: 'normal',
-    },
-  ],
-})*/
-
 export const metadata: Metadata = {
   title: 'Danil Yakimenko. Frontend Developer',
   description:
