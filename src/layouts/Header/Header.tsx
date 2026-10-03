@@ -5,7 +5,7 @@ import { ActiveLink } from '@/components/ActiveLink'
 
 export const Header = () => {
   return (
-    <header className="wrapper flex flex-col py-4 gap-6 sm:flex-row sm:justify-between sm:items-center">
+    <header className="sticky-header wrapper flex flex-col py-4 gap-6 sm:flex-row sm:justify-between sm:items-center">
       <div className="flex justify-between items-center sm:contents">
         <Logo />
         <div className="sm:order-3">

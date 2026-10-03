@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "./variables.css";
+@import "variables";
 
 html {
   height: 100%;
@@ -35,6 +35,35 @@ svg * {
 }
 
 @layer components {
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    animation-name: scrolling-header;
+    animation-fill-mode: both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+
+    @mixin scrolling-header-styles {
+      background-color: var(--color-gray-800);
+      border-bottom-left-radius: var(--radius-2xl);
+      border-bottom-right-radius: var(--radius-2xl);
+    }
+
+    @keyframes scrolling-header {
+      to {
+        @include scrolling-header-styles;
+      }
+    }
+
+    @supports (not (animation-timeline: scroll())) {
+      @include scrolling-header-styles;
+
+      position: sticky !important;
+    }
+  }
+
   .nav-link {
     @apply px-4 py-2.5 rounded-full text-white/70 font-semibold hover:bg-emerald-700 hover:text-white transition duration-200;
   }
