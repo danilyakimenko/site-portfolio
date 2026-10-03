@@ -1,9 +1,9 @@
 import clsx from 'clsx'
 
 type FieldProps = {
-  className: string
+  className?: string
   title: string
-  mode: string
+  mode?: string
   placeholder: string
   isRequired: boolean
   id: string
