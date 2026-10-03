@@ -1,7 +1,16 @@
 import clsx from 'clsx'
 
+type FieldProps = {
+  className: string
+  title: string
+  mode: string
+  placeholder: string
+  isRequired: boolean
+  id: string
+  type: string
+}
 
-export const Field = (props) => {
+export const Field = (props: FieldProps) => {
   const {
     className,
     title,
