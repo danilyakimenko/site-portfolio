@@ -1,14 +1,17 @@
 export const linkItems = [
   {
-    label: 'About',
+    label: 'home',
+    title: 'visitHome',
     href: '/',
   },
   {
-    label: 'Portfolio',
+    label: 'portfolio',
+    title: 'visitPortfolio',
     href: '/portfolio',
   },
   {
-    label: 'Contacts',
+    label: 'contacts',
+    title: 'visitContacts',
     href: '/contacts',
   },
 ]

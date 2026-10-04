@@ -1,8 +1,7 @@
 'use client'
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
+import { Link, usePathname } from '@/i18n/navigation'
 
 type ActiveLinkProps = {
   href: string
@@ -10,7 +9,11 @@ type ActiveLinkProps = {
   children: React.ReactNode
 }
 
-export const ActiveLink = ({ href, title, children }: ActiveLinkProps) => {
+export const ActiveLink = ({
+  href,
+  title,
+  children,
+}: ActiveLinkProps) => {
   const pathname = usePathname()
   const isActive = pathname === href
 

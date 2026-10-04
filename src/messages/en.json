@@ -1,0 +1,10 @@
+{
+  "header": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "contacts": "Contacts",
+    "visitHome": "Visit Home page",
+    "visitPortfolio": "Visit Portfolio page",
+    "visitContacts": "Visit Contacts page"
+  }
+}
