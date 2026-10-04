@@ -11,7 +11,8 @@ export const Portfolio = () => {
       <ul className="grid gap-y-20">
         {portfolioItems.map(({ title, href, description, date, imageSrc, tools }) => (
           <li
-            className="flex flex-col md:flex-row justify-between gap-10 shadow-lg shadow-emerald-500/30 p-8 rounded-2xl hover:shadow-emerald-500/80 transition duration-200"
+            className="flex flex-col md:flex-row justify-between gap-10 shadow-lg
+             shadow-emerald-500/30 p-8 rounded-2xl hover:shadow-emerald-500/80 transition duration-200 bg-emerald-500/10"
             key={title}
           >
             <Image
@@ -22,7 +23,7 @@ export const Portfolio = () => {
               alt={title}
             />
             <div className="flex flex-col items-start gap-y-6">
-              <time className="border border-emerald-900 rounded-xl px-4 py-2 text-emerald-500">
+              <time className="border border-emerald-500 dark:border-emerald-900 rounded-xl px-4 py-2 text-emerald-500">
                 {date}
               </time>
               <a
