@@ -11,20 +11,16 @@ export class ThemeSwitcher {
     this.switchThemeButton = document.querySelector(
       this.selectors.switchThemeButton,
     )
-
     this.setInitialTheme()
     this.bindEvents()
   }
 
   setInitialTheme() {
     const savedTheme = localStorage.getItem(this.storageKey)
-
     if (savedTheme === 'light') {
       document.documentElement.classList.remove('dark')
       return
     }
-
-
     document.documentElement.classList.add('dark')
   }
 
