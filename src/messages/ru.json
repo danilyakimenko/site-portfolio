@@ -14,5 +14,67 @@
     "description": "Я могу сделать для вас что-нибудь крутое.",
     "portfolio": "Мои проекты",
     "portfolioTitle": "Перейти на страницу портфолио"
+  },
+  "Skills": {
+    "title": "Мои навыки",
+    "hard": "Hard",
+    "soft": "Soft",
+    "skills": "skills",
+    "items": {
+      "html": "HTML (HTML5), EJS, JSX",
+      "css": "CSS (CSS3), SASS (SCSS), PostCSS, Bootstrap, Tailwind, анимации",
+      "javascript": "JavaScript (ES6+, OOP), jQuery, TypeScript",
+      "react": "React",
+      "stateManagement": "Redux (Redux Toolkit, Redux Persist), MobX, Zustand",
+      "forms": "Formik, React Hook Form, Yup, Axios, React Router, React Query",
+      "buildTools": "Webpack, Vite, Gulp, Rollup",
+      "testing": "Jest, React Testing Library, Enzyme, Chai, Mocha, Vitest",
+      "api": "REST API, WebSockets, Long Polling",
+      "architecture": "BEM, Feature-Sliced Design, доступность, UX",
+      "git": "Git (GitHub, BitBucket, GitLab)",
+      "design": "Figma, Adobe Photoshop, Avocode",
+      "cms": "CMS 1C-Bitrix, Drupal, OpenCart, MODX",
+      "php": "Базовое понимание PHP, Blade, Twig",
+      "methodologies": "Agile, Waterfall, SCRUM",
+      "communication": "Грамотная письменная и устная речь",
+      "english": "Английский язык — B1",
+      "teamwork": "Умею работать в команде, имею опыт взаимодействия с дизайнерами, менеджерами и другими разработчиками",
+      "deadlines": "Ответственно отношусь к соблюдению сроков",
+      "attention": "Внимательно отношусь к деталям технического задания",
+      "codeQuality": "Требовательно отношусь к качеству своего кода и соблюдаю code style",
+      "timeManagement": "Обладаю навыками тайм-менеджмента",
+      "criticism": "Положительно отношусь к конструктивной критике и всегда рад находить новые точки профессионального и личностного роста",
+      "conflicts": "Умею решать конфликтные ситуации",
+      "reports": "При необходимости пишу подробные отчёты о проделанной работе",
+      "remoteWork": "Имею опыт работы с географически распределённой командой (удалённая работа)",
+      "mentoring": "Имею опыт наставничества и обучения junior-специалистов",
+      "learning": "Мотивирован развивать свои навыки и постоянно изучаю новые технологии в своей области"
+    }
+  },
+  "Portfolio": {
+    "title": "Моё",
+    "portfolio": "Портфолио",
+    "items": {
+      "animeVibe": {
+        "description": "AnimeVibe — адаптивная многостраничная платформа для просмотра аниме, созданная с использованием Minista, JavaScript, JSX и SCSS.",
+        "date": "Сентябрь 2026"
+      },
+      "futureTech": {
+        "description": "Future Tech — адаптивный многостраничный сайт, созданный с использованием Vite, TypeScript, React и SCSS.",
+        "date": "Август 2026"
+      },
+      "youtubeClone": {
+        "description": "YouTube Clone — адаптивная видеоплатформа, созданная с использованием Next.js, TypeScript, React и модульного SCSS.",
+        "date": "Октябрь 2026"
+      }
+    }
+  },
+  "Footer": {
+    "question": "Хотите спросить",
+    "interesting": "что-нибудь интересное?",
+    "contact": "Свяжитесь со мной.",
+    "availability": "Я на связи с понедельника по пятницу с 8:00 до 20:00 (GMT +7).",
+    "contactsTitle": "Перейти на страницу контактов",
+    "copyright": "© Данил Якименко, 2026"
   }
 }

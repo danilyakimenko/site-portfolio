@@ -1,108 +1,90 @@
-
-
 export const portfolioItems = [
   {
+    id: 'animeVibe',
     title: 'AnimeVibe',
     href: 'https://danilyakimenko.github.io/anime-vibe/',
-    description: 'AnimeVibe is a responsive multi-page anime streaming platform built with Minista, JavaScript, JSX and SCSS.',
-    date: 'September 2026',
     imageSrc: '/animevibe.png',
     tools: [
       {
         title: 'Vite',
-        toolIcon: '/vite.svg'
+        toolIcon: '/vite.svg',
       },
-
       {
-        title: 'Typescript',
-        toolIcon: '/typescript.svg'
+        title: 'TypeScript',
+        toolIcon: '/typescript.svg',
       },
-
       {
         title: 'React',
-        toolIcon: '/react.svg'
+        toolIcon: '/react.svg',
       },
-
       {
         title: 'PostCSS',
-        toolIcon: '/postcss.svg'
+        toolIcon: '/postcss.svg',
       },
-
       {
         title: 'JS',
-        toolIcon: '/js.svg'
+        toolIcon: '/js.svg',
       },
-
       {
         title: 'SCSS',
-        toolIcon: '/scss.svg'
+        toolIcon: '/scss.svg',
       },
-    ]
+    ],
   },
   {
+    id: 'futureTech',
     title: 'Future Tech',
     href: 'https://danilyakimenko.github.io/future-tech/',
-    description: 'AnimeVibe is a responsive multi-page anime streaming platform built with Minista, JavaScript, JSX and SCSS.',
-    date: 'August 2026',
     imageSrc: '/futuretech.png',
     tools: [
       {
         title: 'Vite',
-        toolIcon: '/vite.svg'
+        toolIcon: '/vite.svg',
       },
       {
-        title: 'Typescript',
-        toolIcon: '/typescript.svg'
+        title: 'TypeScript',
+        toolIcon: '/typescript.svg',
       },
       {
         title: 'React',
-        toolIcon: '/react.svg'
+        toolIcon: '/react.svg',
       },
       {
         title: 'PostCSS',
-        toolIcon: '/postcss.svg'
+        toolIcon: '/postcss.svg',
       },
       {
         title: 'JS',
-        toolIcon: '/js.svg'
+        toolIcon: '/js.svg',
       },
       {
         title: 'SCSS',
-        toolIcon: '/scss.svg'
+        toolIcon: '/scss.svg',
       },
-    ]
+    ],
   },
   {
+    id: 'youtubeClone',
     title: 'YouTube Clone',
     href: 'https://github.com/danilyakimenko/youtube-clone',
-    description: 'AnimeVibe is a responsive multi-page anime streaming platform built with Minista, JavaScript, JSX and SCSS.',
-    date: 'October 2026',
     imageSrc: '/youtubeclone.png',
     tools: [
       {
-        title: 'Vite',
-        toolIcon: '/vite.svg'
+        title: 'Next.js',
+        toolIcon: '/nextjs.svg',
       },
       {
-        title: 'Typescript',
-        toolIcon: '/typescript.svg'
+        title: 'TypeScript',
+        toolIcon: '/typescript.svg',
       },
       {
         title: 'React',
-        toolIcon: '/react.svg'
-      },
-      {
-        title: 'PostCSS',
-        toolIcon: '/postcss.svg'
-      },
-      {
-        title: 'JS',
-        toolIcon: '/js.svg'
+        toolIcon: '/react.svg',
       },
       {
         title: 'SCSS',
-        toolIcon: '/scss.svg'
+        toolIcon: '/scss.svg',
       },
-    ]
+    ],
   },
 ]

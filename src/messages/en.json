@@ -14,5 +14,68 @@
     "description": "I can do some great things for you.",
     "portfolio": "Let's check!",
     "portfolioTitle": "Visit Portfolio page"
+  },
+  "Skills": {
+    "title": "My Skills",
+    "hard": "Hard",
+    "soft": "Soft",
+    "skills": "skills",
+    "items": {
+      "html": "HTML (HTML5), EJS, JSX",
+      "css": "CSS (CSS3), SASS (SCSS), PostCSS, Bootstrap, Tailwind, Animations",
+      "javascript": "JavaScript (ES6+, OOP), jQuery, TypeScript",
+      "react": "React",
+      "stateManagement": "Redux (Redux Toolkit, Redux Persist), MobX, Zustand",
+      "forms": "Formik, React Hook Form, Yup, Axios, React Router, React Query",
+      "buildTools": "Webpack, Vite, Gulp, Rollup",
+      "testing": "Jest, React Testing Library, Enzyme, Chai, Mocha, Vitest",
+      "api": "REST API, WebSockets, Long Polling",
+      "architecture": "BEM, Feature-Sliced Design, Accessibility, UX",
+      "git": "Git (GitHub, BitBucket, GitLab)",
+      "design": "Figma, Adobe Photoshop, Avocode",
+      "cms": "CMS 1C-Bitrix, Drupal, OpenCart, MODX",
+      "php": "Basic understanding PHP, Blade, Twig",
+      "methodologies": "Agile, Waterfall, SCRUM",
+      "communication": "Competent written and oral speech",
+      "english": "English level - B1",
+      "teamwork": "I know how to work in a team, I have experience in communication with designers, managers and other developers",
+      "deadlines": "I am responsible about deadlines",
+      "attention": "I am attentive to the details of the terms of reference",
+      "codeQuality": "I am demanding of the quality of my code, I follow the code-style",
+      "timeManagement": "I have time management skills",
+      "criticism": "I welcome constructive criticism and am always happy to find new points of professional and personal growth",
+      "conflicts": "I know how to solve conflict situations",
+      "reports": "I write detailed reports on the work done, if required",
+      "remoteWork": "I have experience working with a geographically distributed team (remote work)",
+      "mentoring": "I have experience in mentoring, training of junior specialists",
+      "learning": "I am motivated to improve my skills, constantly studying new technologies in my field of activity"
+    }
+
+  },
+  "Portfolio": {
+    "title": "My",
+    "portfolio": "Portfolio",
+    "items": {
+      "animeVibe": {
+        "description": "AnimeVibe is a responsive multi-page anime streaming platform built with Minista, JavaScript, JSX and SCSS.",
+        "date": "September 2026"
+      },
+      "futureTech": {
+        "description": "Future Tech is a responsive multi-page website built with Vite, TypeScript, React and SCSS.",
+        "date": "August 2026"
+      },
+      "youtubeClone": {
+        "description": "YouTube Clone is a responsive video platform built with Next.js, TypeScript, React and modular SCSS.",
+        "date": "October 2026"
+      }
+    }
+  },
+  "Footer": {
+    "question": "Do you want to ask",
+    "interesting": "something interesting?",
+    "contact": "Contact me.",
+    "availability": "I am in touch mon-fri from 8 am to 8 pm (GMT +7).",
+    "contactsTitle": "Visit Contacts page",
+    "copyright": "© Danil Yakimenko, 2026"
   }
 }
