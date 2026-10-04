@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { useLocale } from 'next-intl'
 import { usePathname, useRouter } from '@/i18n/navigation'
 
@@ -8,16 +9,22 @@ export const LanguageSwitcher = () => {
   const router = useRouter()
   const pathname = usePathname()
 
+  const [isOpen, setIsOpen] = useState(false)
+
   const languages = ['en', 'ru'] as const
 
   const switchLanguage = (nextLocale: (typeof languages)[number]) => {
     if (nextLocale === locale) return
 
     router.replace(pathname, { locale: nextLocale })
+    setIsOpen(false)
   }
 
   return (
-    <div className="relative group">
+    <div
+      className="relative group"
+      onClick={() => setIsOpen(!isOpen)}
+    >
       <button
         type="button"
         className="h-11 w-11 rounded-full bg-emerald-500 font-bold uppercase text-white hover:bg-emerald-600 dark:bg-transparent dark:hover:bg-gray-800"
@@ -26,7 +33,19 @@ export const LanguageSwitcher = () => {
         {locale}
       </button>
 
-      <div className="invisible pointer-events-none absolute right-0 top-full z-50 pt-2 opacity-0 transition-all duration-200 group-hover:visible group-hover:pointer-events-auto group-hover:opacity-100">
+      <div
+        className={`
+          absolute right-0 top-full z-50 pt-2
+          transition-all duration-200
+          md:invisible md:pointer-events-none md:opacity-0
+          md:group-hover:visible md:group-hover:pointer-events-auto md:group-hover:opacity-100
+          ${
+          isOpen
+            ? 'visible pointer-events-auto opacity-100'
+            : 'invisible pointer-events-none opacity-0'
+        }
+        `}
+      >
         <div className="min-w-24 overflow-hidden rounded-md border border-emerald-900 bg-emerald-600 p-1 shadow-lg dark:border-gray-700 dark:bg-gray-900">
           {languages.map((language) => (
             <button
