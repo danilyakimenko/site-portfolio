@@ -12,6 +12,7 @@ import { Main } from '@/layouts/Main'
 import { Footer } from '@/layouts/Footer'
 import { ThemeSwitcherInit } from '@/modules/ThemeSwitcherInit'
 import { notFound } from 'next/navigation'
+import { PageLoader } from '@/components/PageLoader'
 
 const rubik = localFont({
   src: '../fonts/Rubik-Variable.woff2',
@@ -38,8 +39,10 @@ export default async function LocaleLayout({
   const messages = await getMessages()
 
   return (
-    <html lang={locale} className={`${rubik.className} h-full`}>
+    <html lang={locale} className={`${rubik.className} h-full dark`}>
       <body className="antialiased flex flex-col bg-white dark:bg-gray-900 min-h-full text-black dark:text-white">
+        <PageLoader />
+
         <NextIntlClientProvider messages={messages}>
           <ThemeSwitcherInit />
           <Header />
