@@ -3,22 +3,12 @@
 import { linkItems } from './items/linkItems'
 import { Logo } from '@/components/Logo'
 import { ActiveLink } from '@/components/ActiveLink'
-import { useLocale, useTranslations } from 'next-intl'
-import { usePathname, useRouter } from '@/i18n/navigation'
+import { useTranslations } from 'next-intl'
+
+import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 
 export const Header = () => {
   const t = useTranslations('header')
-  const locale = useLocale()
-  const router = useRouter()
-  const pathname = usePathname()
-
-  const nextLocale = locale === 'en' ? 'ru' : 'en'
-
-  const switchLanguage = () => {
-    router.replace(pathname, {
-      locale: nextLocale,
-    })
-  }
 
   return (
     <header className="sticky-header wrapper flex flex-col py-4 gap-6 sm:flex-row sm:justify-between sm:items-center">
@@ -41,17 +31,7 @@ export const Header = () => {
               />
             </button>
 
-            <button
-              type="button"
-              onClick={switchLanguage}
-            >
-              <img
-                src="/language.svg"
-                width={44}
-                height={44}
-                alt="Switch language"
-              />
-            </button>
+            <LanguageSwitcher />
           </div>
         </div>
       </div>

@@ -7,5 +7,12 @@
     "visitPortfolio": "Visit Portfolio page",
     "visitContacts": "Visit Contacts page",
     "theme": "Switch theme"
+  },
+  "Hero": {
+    "greeting": "Hello!",
+    "intro": "My name is Danil Yakimenko.",
+    "description": "I can do some great things for you.",
+    "portfolio": "Let's check!",
+    "portfolioTitle": "Visit Portfolio page"
   }
 }

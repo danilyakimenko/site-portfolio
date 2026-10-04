@@ -1,35 +1,43 @@
+'use client'
+
 import Image from 'next/image'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
+import { useTranslations } from 'next-intl'
 
 export const Hero = () => {
+  const t = useTranslations('Hero')
+
   return (
-    <section className="wrapper flex flex-col justify-center items-center gap-4 py-20 sm:flex-row">
-      <div className="grid gap-y-6 flex-1 text-4xl sm:text-5xl shrink-0">
+    <section className="wrapper flex flex-col items-center justify-center gap-4 py-20 sm:flex-row">
+      <div className="grid shrink-0 flex-1 gap-y-6 text-4xl sm:text-5xl">
         <h1 className="tracking-[4px]">
-          <span className="text-emerald-500">Hello!</span>&nbsp; My name is{' '}
-          <br /> Danil Yakimenko.
+          <span className="text-emerald-500">{t('greeting')}</span>&nbsp;
+          {t('intro')}
         </h1>
+
         <p className="tracking-[4px]">
-          I can do some great things for you.
+          {t('description')}
         </p>
+
         <Link
-          className="text-lg w-40 px-5 py-3 rounded-2xl dark:text-white/70 font-semibold
-           border dark:border-white/15 dark:bg-white/10  dark:hover:text-white dark:hover:border-emerald-600 transition text-center
-           border-none bg-emerald-500 text-white hover:bg-emerald-600
-           "
+          className="w-40 rounded-2xl border-none bg-emerald-500 px-5 py-3 text-center
+            text-lg font-semibold text-white transition hover:bg-emerald-600
+            dark:border dark:border-white/15 dark:bg-white/10 dark:text-white/70
+            dark:hover:border-emerald-600 dark:hover:text-white"
           href="/portfolio"
-          title="Visit Portfolio page"
+          title={t('portfolioTitle')}
         >
-          Let's check!
+          {t('portfolio')}
         </Link>
       </div>
-        <Image
-          className="rounded-2xl w-full max-w-md "
-          src="/animation.webp"
-          width={350}
-          height={350}
-          alt=""
-        />
+
+      <Image
+        className="w-full max-w-md rounded-2xl"
+        src="/animation.webp"
+        width={350}
+        height={350}
+        alt=""
+      />
     </section>
   )
 }
