@@ -17,7 +17,7 @@ export const Skills = () => {
           <ul className="grid gap-y-8">
             {items.map((item, index) => (
               <li
-                className="shadow-md shadow-emerald-500/50 rounded-2xl p-4"
+                className="shadow-lg dark:shadow-md shadow-emerald-500/50 rounded-2xl p-4"
                 key={index}
               >
                 {item}
