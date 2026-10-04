@@ -70,6 +70,17 @@
       }
     }
   },
+  "Contacts": {
+    "title": "Contact",
+    "me": "me",
+    "firstName": "First Name",
+    "firstNamePlaceholder": "Ivan",
+    "email": "Email",
+    "emailPlaceholder": "example@email.com",
+    "message": "Message",
+    "messagePlaceholder": "Hi! I have a suggestion for you...",
+    "send": "Send Message"
+  },
   "Footer": {
     "question": "Do you want to ask",
     "interesting": "something interesting?",

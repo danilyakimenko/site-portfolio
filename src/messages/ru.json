@@ -69,6 +69,17 @@
       }
     }
   },
+  "Contacts": {
+    "title": "Свяжитесь со",
+    "me": "мной",
+    "firstName": "Имя",
+    "firstNamePlaceholder": "Иван",
+    "email": "Email",
+    "emailPlaceholder": "example@email.com",
+    "message": "Сообщение",
+    "messagePlaceholder": "Добрый день! У меня есть предложение для вас...",
+    "send": "Отправить"
+  },
   "Footer": {
     "question": "Хотите спросить",
     "interesting": "что-нибудь интересное?",
