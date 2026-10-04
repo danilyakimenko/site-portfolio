@@ -29,6 +29,7 @@ export const Header = () => {
           <div className="flex items-center gap-3">
             <button
               type="button"
+              title={t('theme')}
               data-js-switch-theme-button=""
             >
               <img
@@ -36,7 +37,7 @@ export const Header = () => {
                 src="/sun.svg"
                 width={44}
                 height={44}
-                alt="Switch to a light theme"
+                alt=""
               />
             </button>
 
