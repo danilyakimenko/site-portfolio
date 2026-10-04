@@ -42,7 +42,7 @@ export const Field = (props: FieldProps) => {
         )}
       </label>
       <Component
-        className={clsx("text-xl w-80 h-10 p-7 rounded-xl border hover:border-emerald-500 w-full", {
+        className={clsx("dark:placeholder:text-white/50 text-xl w-80 h-10 p-7 rounded-xl bg-emerald-600/10 hover:bg-emerald-600/20 border border-emerald-700 hover:border-emerald-500 w-full", {
           "h-70": isTextArea
         })}
         id={id}
