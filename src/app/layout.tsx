@@ -4,6 +4,7 @@ import '../styles/globals.scss'
 import { Header } from '@/layouts/Header'
 import { Main } from '@/layouts/Main'
 import { Footer } from '@/layouts/Footer'
+import { ThemeSwitcherInit } from '@/modules/ThemeSwitcherInit'
 
 const rubik = localFont({
   src: './fonts/Rubik-Variable.woff2',
@@ -19,8 +20,11 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html lang="en" className={`${rubik.className} h-full`}>
       <body className="antialiased flex flex-col bg-white dark:bg-gray-900 min-h-full text-black dark:text-white">
+          <ThemeSwitcherInit />
         <Header />
-        <Main>{children}</Main>
+        <Main>
+          {children}
+        </Main>
         <Footer />
       </body>
     </html>
