@@ -100,11 +100,12 @@ export const Hero = () => {
 
       <Image
         className="w-full max-w-md rounded-2xl"
-        src="/animation.webp"
-        width={350}
-        height={350}
+        src="/logo.jpg"
+        width={300}
+        height={300}
         alt=""
       />
+
     </section>
   )
 }

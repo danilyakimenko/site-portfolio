@@ -18,7 +18,7 @@ export const Portfolio = () => {
         {portfolioItems.map(
           ({ id, title, href, imageSrc, tools }) => (
             <li
-              className="flex flex-col justify-between gap-10 rounded-2xl bg-emerald-500/10 p-8 shadow-lg shadow-emerald-500/30 transition duration-200 hover:shadow-emerald-500/80 md:flex-row"
+              className="flex flex-col gap-20 justify-between rounded-2xl bg-emerald-500/10 p-8 shadow-lg shadow-emerald-500/30 transition duration-200 hover:shadow-emerald-500/80 md:flex-row"
               key={id}
             >
               <Image
