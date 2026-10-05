@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Danil Yakimenko. Frontend Developer",
+    "description": "Portfolio of Danil Yakimenko, a Frontend Developer building modern and responsive web interfaces."
+  },
   "header": {
     "home": "Home",
     "portfolio": "Portfolio",
